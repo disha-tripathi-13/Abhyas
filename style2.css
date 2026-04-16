@@ -1,0 +1,70 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container: split screen */
+.login-container {
+  display: flex;               /* side-by-side layout */
+  min-height: 100vh;           /* full screen height */
+}
+
+/* Left side image */
+.login-image {
+  flex: 1;                     /* image takes half width */
+  background: url("login_image.jpg") no-repeat center center;
+  background-size: cover;      /* image fills the space */
+}
+
+/* Right side content */
+.login-content {
+        
+  flex-direction: column;
+  justify-content: center;     /* vertically center text */
+  align-items: flex-start;     /* align text to the left */
+  padding: 40px;
+}
+
+/* Headings */
+.text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.text2 {
+    padding: 40px 1px 1px 1px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+.login-content form input {
+  width: 80%;          /* wider inputs */
+  max-width: 400px;    /* prevents them from being too wide */
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button */
+.login-content form button {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #0073e6;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-content form button:hover {
+  background-color: #005bb5;
+}
